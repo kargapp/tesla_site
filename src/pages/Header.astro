@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+---
+
+<header class="flex h-[56px] items-center justify-between px-12 py-3">
+  <div id="logo-container" class="flex min-w-max items-center">
+    <Image
+      src={"/header/tesla-logo.svg"}
+      alt={"Tesla"}
+      height={24}
+      width={120}
+    />
+  </div>
+  <button class="rounded bg-[#f2f2f2] px-[16px] py-[4px] lg:hidden">
+    Menu
+  </button>
+  <nav id="link-container" class="hidden min-w-max items-center gap-5 lg:flex">
+    <a href="#">
+      <p class="text-sm font-medium tracking-widest">Vehicles</p>
+    </a>
+    <a href="#">
+      <p class="text-sm font-medium tracking-widest">Energy</p>
+    </a>
+    <a href="#">
+      <p class="text-sm font-medium tracking-widest">Charging</p>
+    </a>
+    <a href="#">
+      <p class="text-sm font-medium tracking-widest">Discover</p>
+    </a>
+    <a href="#">
+      <p class="text-sm font-medium tracking-widest">Shop</p>
+    </a>
+    <a href="#">
+      <p class="text-sm font-medium tracking-widest">We, Robot</p>
+    </a>
+  </nav>
+  <div id="icon-container" class="hidden min-w-max items-center gap-2 lg:flex">
+    <Image src={"/header/help-icon.svg"} alt={"Help"} height={24} width={24} />
+    <Image
+      src={"/header/globe-icon.svg"}
+      alt={"Globe"}
+      height={24}
+      width={24}
+    />
+    <Image
+      src={"/header/account-icon.svg"}
+      alt={"My Account"}
+      height={24}
+      width={24}
+    />
+  </div>
+</header>
